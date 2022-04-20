@@ -13,13 +13,13 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 		<meta http-equiv="content-security-policy" content=""><link rel="stylesheet" href="/sveltekit-watergis-template/smui.css" media="(prefers-color-scheme: light)" data-svelte="svelte-7r4yyr">
 		<link rel="stylesheet" href="/sveltekit-watergis-template/smui-dark.css" media="screen and (prefers-color-scheme: dark)" data-svelte="svelte-7r4yyr">
-	<link rel="stylesheet" href="/sveltekit-watergis-template/_app/assets/__layout-8442b326.css">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/start-dc551506.js">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/index-c300e5a7.js">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/preload-helper-e505b05f.js">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/pages/__layout.svelte-88e0dfe2.js">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/__layout-6d337494.js">
-	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/pages/index.svelte-d3e2b2a4.js">
+	<link rel="stylesheet" href="/sveltekit-watergis-template/_app/assets/__layout-14e35b6a.css">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/start-0d263f41.js">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/index-5665ac7e.js">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/preload-helper-885451ab.js">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/pages/__layout.svelte-94883366.js">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/chunks/__layout-3f81963e.js">
+	<link rel="modulepreload" href="/sveltekit-watergis-template/_app/pages/index.svelte-04c0ceb1.js">
 	</head>
 	<style type="text/css">
 		html,
@@ -55,7 +55,23 @@
 </header>
 <main class="">
 </main>
-<div class="drawer-container svelte-kw9kwo"><aside class="mdc-drawer mdc-drawer--dismissible"><div class="drawer-content svelte-kw9kwo"><div class="mdc-drawer__header"><div class="mdc-form-field"><div class="mdc-checkbox" style=""><input class="mdc-checkbox__native-control" type="checkbox" id="SMUI-form-field-0" checked>
+<div class="drawer-container svelte-kw9kwo"><aside class="mdc-drawer mdc-drawer--dismissible"><div class="drawer-content svelte-kw9kwo"><div class="mdc-drawer__header"><div class="style-switcher svelte-gac6mv"><div class="mdc-select smui-select--standard" style="">
+  <div class="mdc-select__anchor">
+    <label class="mdc-floating-label" style="" id="SMUI-select-0-smui-label">Map theme</label>
+    
+    
+    <span class="mdc-select__selected-text-container"><span id="SMUI-select-0-smui-selected-text" class="mdc-select__selected-text" role="button" aria-haspopup="listbox" aria-labelledby="SMUI-select-0-smui-label"></span></span>
+    <span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span>
+    <div class="mdc-line-ripple" style=""></div></div>
+
+  
+
+<div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth" style=""><ul class="mdc-deprecated-list" role="listbox"><span class="mdc-deprecated-list-item mdc-deprecated-list-item--selected" style="" tabindex="0" data-value="https://narwassco.github.io/mapbox-stylefiles/unvt/style.json" value="https://narwassco.github.io/mapbox-stylefiles/unvt/style.json"><span class="mdc-deprecated-list-item__ripple"></span>UNVT(Water)</span><span class="mdc-deprecated-list-item" style="" tabindex="-1" data-value="https://narwassco.github.io/mapbox-stylefiles/unvt/style-sewer.json" value="https://narwassco.github.io/mapbox-stylefiles/unvt/style-sewer.json"><span class="mdc-deprecated-list-item__ripple"></span>UNVT(Sewer)</span>
+</ul>
+</div></div>
+
+</div>
+				<div class="mdc-form-field"><div class="mdc-checkbox" style=""><input class="mdc-checkbox__native-control" type="checkbox" id="SMUI-form-field-0" checked>
   <div class="mdc-checkbox__background"><svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24"><path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path></svg>
     <div class="mdc-checkbox__mixedmark"></div></div>
   <div class="mdc-checkbox__ripple"></div>
@@ -75,16 +91,16 @@
 </nav>
 </div></div>
 </aside>
-	<div class="app-content mdc-drawer-app-content"><main class="main-content svelte-kw9kwo"><div class="map-wrap svelte-7ujfu6"><div class="map svelte-7ujfu6" id="map"></div>
+	<div class="app-content mdc-drawer-app-content"><main class="main-content svelte-kw9kwo"><div class="map-wrap svelte-k54od3"><div class="map svelte-k54od3" id="map"></div>
 </div></main>
 </div>
 </div>
 
 
-		<script type="module" data-hydrate="4sl1l2">
-		import { start } from "/sveltekit-watergis-template/_app/start-dc551506.js";
+		<script type="module" data-hydrate="hr811l">
+		import { start } from "/sveltekit-watergis-template/_app/start-0d263f41.js";
 		start({
-			target: document.querySelector('[data-hydrate="4sl1l2"]').parentNode,
+			target: document.querySelector('[data-hydrate="hr811l"]').parentNode,
 			paths: {"base":"/sveltekit-watergis-template","assets":"/sveltekit-watergis-template"},
 			session: {},
 			route: true,
@@ -94,8 +110,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/sveltekit-watergis-template/_app/pages/__layout.svelte-88e0dfe2.js"),
-						import("/sveltekit-watergis-template/_app/pages/index.svelte-d3e2b2a4.js")
+					import("/sveltekit-watergis-template/_app/pages/__layout.svelte-94883366.js"),
+						import("/sveltekit-watergis-template/_app/pages/index.svelte-04c0ceb1.js")
 				],
 				params: {},
 				routeId: ""
