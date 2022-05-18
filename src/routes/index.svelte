@@ -11,6 +11,19 @@
 	selectedStyle.update(() => defaultStyle);
 </script>
 
+<svelte:head>
+	<title>Water and Sewerage Map for Narok Water</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170080825-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-170080825-1');
+	</script>
+</svelte:head>
+
 <Header bind:drawerOpen />
 <DrawerContent bind:open={drawerOpen}>
 	<Map />
