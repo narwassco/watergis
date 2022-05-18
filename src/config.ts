@@ -1,10 +1,10 @@
 import type { Config } from './lib/types';
 
 export const config: Config = {
-	title: 'GIS for Water',
-	url: 'https://water-gis.com',
-	logo: 'https://raw.githubusercontent.com/watergis/logo/main/logo.svg',
-	basePath: process.env.NODE_ENV === 'production' ? '/sveltekit-watergis-template' : '',
+	title: 'NARWASSCO',
+	url: 'https://narwassco.co.ke',
+	logo: `https://raw.githubusercontent.com/narwassco/logo/main/logo.png`,
+	basePath: process.env.NODE_ENV === 'production' ? '' : '',
 	// change attribution to yours
 	attribution: '©NARWASSCO',
 	// change stylefiles URLs to yours
