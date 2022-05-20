@@ -66,7 +66,8 @@ export const config: Config = {
 			'sewer_public_toilet',
 			'sewer_pipeline',
 			'sewer_treatment_plant',
-			'manhole'
+			'manhole',
+			'sewer_zone'
 		]
 	},
 	// please specify your covered area if you have multipul locations to do waterworks
@@ -109,7 +110,9 @@ export const config: Config = {
 			sewer_public_toilet: 'Public Toilet (Sewer)',
 			manhole: 'Manhole',
 			sewer_pipeline: 'Sewer pipeline',
-			sewer_treatment_plant: 'Wastewater treatment plant'
+			sewer_treatment_plant: 'Wastewater treatment plant',
+			sewer_zone: 'Sewer zone',
+			sewer_zone_annotation: 'Sewer zone label'
 		}
 	},
 	elevation: {
