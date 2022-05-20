@@ -1,7 +1,7 @@
 import type { Config } from './lib/types';
 
 export const config: Config = {
-	title: 'NARWASSCO',
+	title: 'Water & Sewerage Map in Narok',
 	url: 'https://narwassco.co.ke',
 	logo: `https://raw.githubusercontent.com/narwassco/logo/main/logo.png`,
 	basePath: process.env.NODE_ENV === 'production' ? '' : '',
