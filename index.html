@@ -11,21 +11,15 @@
 			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
 		/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
-		<meta http-equiv="content-security-policy" content=""><title>Water &amp; Sewerage Map in Narok</title><script async src="https://www.googletagmanager.com/gtag/js?id=UA-170080825-1" data-svelte="svelte-5fno74"></script><script data-svelte="svelte-5fno74">window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-170080825-1');
-	</script><link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" data-svelte="svelte-7r4yyr">
+		<meta http-equiv="content-security-policy" content=""><link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" data-svelte="svelte-7r4yyr">
 		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" data-svelte="svelte-7r4yyr">
-	<link rel="stylesheet" href="/_app/assets/index-c9387a87.css">
-	<link rel="modulepreload" href="/_app/start-e70fe25a.js">
-	<link rel="modulepreload" href="/_app/chunks/index-1f74207a.js">
-	<link rel="modulepreload" href="/_app/chunks/preload-helper-a5242efd.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-a525b02f.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-ff081e78.js">
-	<link rel="modulepreload" href="/_app/chunks/index-218e774f.js">
+	<link href="/_app/immutable/assets/index-0578a9d0.css" rel="stylesheet">
+	<link rel="modulepreload" href="/_app/immutable/start-4d42abd1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-451968bf.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-c9f5c660.js">
+	<link rel="modulepreload" href="/_app/immutable/layout.svelte-d36d8c46.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-58098221.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-502fb9fa.js">
 	</head>
 	<style type="text/css">
 		html,
@@ -41,7 +35,15 @@
 		<div>
 
 
-
+<sveltekit:head><title>Water &amp; Sewerage Map in Narok</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170080825-1"></script>
+	<script>window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-170080825-1');
+	</script></sveltekit:head>
 
 
 
@@ -241,10 +243,13 @@
 </div>
 
 
-		<script type="module" data-hydrate="1xdgmhe">
-		import { start } from "/_app/start-e70fe25a.js";
+		<script type="module" data-sveltekit-hydrate="gg6kzb">
+		import { set_public_env, start } from "/_app/immutable/start-4d42abd1.js";
+
+		set_public_env({});
+
 		start({
-			target: document.querySelector('[data-hydrate="1xdgmhe"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="gg6kzb"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -253,10 +258,7 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/_app/layout.svelte-a525b02f.js"),
-						import("/_app/pages/index.svelte-ff081e78.js")
-				],
+				nodes: [0, 2],
 				params: {},
 				routeId: ""
 			}
