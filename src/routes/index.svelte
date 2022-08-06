@@ -11,7 +11,7 @@
 	selectedStyle.update(() => defaultStyle);
 </script>
 
-<svelte:head>
+<sveltekit:head>
 	<title>{config.title}</title>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170080825-1"></script>
 	<script>
@@ -22,7 +22,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-170080825-1');
 	</script>
-</svelte:head>
+</sveltekit:head>
 
 <Header bind:drawerOpen />
 <DrawerContent bind:open={drawerOpen}>
