@@ -1,6 +1,6 @@
 const l = [
   "/_app/immutable/assets/information-b8b32f49.svg",
-  "/_app/immutable/start-8724aaf9.js",
+  "/_app/immutable/start-168132b2.js",
   "/_app/immutable/layout.svelte-d36d8c46.js",
   "/_app/immutable/error.svelte-3a6f2cea.js",
   "/_app/immutable/pages/index.svelte-48735ef0.js",
@@ -28,7 +28,7 @@ const l = [
   "/robots.txt",
   "/smui-dark.css",
   "/smui.css"
-], i = "1660386325000", a = self, o = `cache${i}`, p = l.concat(h), m = new Set(p);
+], i = "1660387153402", a = self, o = `cache${i}`, p = l.concat(h), m = new Set(p);
 a.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
