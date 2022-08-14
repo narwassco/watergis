@@ -1,16 +1,16 @@
 const l = [
   "/_app/immutable/assets/information-b8b32f49.svg",
-  "/_app/immutable/start-4d3932ed.js",
+  "/_app/immutable/start-27f293fb.js",
   "/_app/immutable/layout.svelte-d36d8c46.js",
   "/_app/immutable/error.svelte-3a6f2cea.js",
-  "/_app/immutable/pages/index.svelte-de917a47.js",
+  "/_app/immutable/pages/index.svelte-ba2e8f4d.js",
   "/_app/immutable/chunks/index-451968bf.js",
   "/_app/immutable/chunks/preload-helper-c9f5c660.js",
-  "/_app/immutable/chunks/index-baa6ecd2.js",
+  "/_app/immutable/chunks/index-ca96b3b7.js",
   "/_app/immutable/assets/index-821d967d.css",
   "/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
   "/_app/immutable/chunks/purify.es-655bdd74.js",
-  "/_app/immutable/chunks/index.es-05dd904f.js"
+  "/_app/immutable/chunks/index.es-73573363.js"
 ], h = [
   "/.nojekyll",
   "/assets/icons/icon-128x128.png",
@@ -28,7 +28,7 @@ const l = [
   "/robots.txt",
   "/smui-dark.css",
   "/smui.css"
-], i = "1660488577158", a = self, o = `cache${i}`, p = l.concat(h), m = new Set(p);
+], i = "1660494844866", a = self, o = `cache${i}`, p = l.concat(h), m = new Set(p);
 a.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
@@ -45,7 +45,7 @@ a.addEventListener("activate", (s) => {
     })
   );
 });
-async function d(s) {
+async function u(s) {
   const e = await caches.open(`offline${i}`);
   try {
     const t = await fetch(s);
@@ -62,6 +62,6 @@ a.addEventListener("fetch", (s) => {
     return;
   const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && m.has(e.pathname), r = s.request.cache === "only-if-cached" && !n;
   t && !c && !r && s.respondWith(
-    (async () => n && await caches.match(s.request) || d(s.request))()
+    (async () => n && await caches.match(s.request) || u(s.request))()
   );
 });
