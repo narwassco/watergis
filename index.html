@@ -19,13 +19,17 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 		<meta http-equiv="content-security-policy" content=""><link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" data-svelte="svelte-7r4yyr">
 		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" data-svelte="svelte-7r4yyr">
-	<link href="/_app/immutable/assets/index-821d967d.css" rel="stylesheet">
-	<link rel="modulepreload" href="/_app/immutable/start-27f293fb.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-451968bf.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-c9f5c660.js">
-	<link rel="modulepreload" href="/_app/immutable/layout.svelte-d36d8c46.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-ba2e8f4d.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-ca96b3b7.js">
+	<link href="./_app/immutable/assets/_page-7afceba0.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-463474ab.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-b92bc20f.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-268b2c85.js">
+	<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-7d20b4b2.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-678b4fd9.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_page-4af1b517.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/stores-b74f58f2.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.ts-e9fa0128.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_page-802cc2a3.js">
 			<script>
 		if ('serviceWorker' in navigator) {
 			addEventListener('load', function () {
@@ -68,7 +72,28 @@
 			<span class="mdc-top-app-bar__title">Water &amp; Sewerage Map in Narok</span>
 </section>
 		<section></section>
-		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar"><button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" aria-label="Print"><div class="mdc-icon-button__ripple"></div>
+		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar"><button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" aria-label="Share"><div class="mdc-icon-button__ripple"></div>
+  share</button>
+
+
+
+
+<div class="mdc-dialog" role="alertdialog" aria-modal="true" aria-labelledby="mandatory-title" aria-describedby="mandatory-content"><div class="mdc-dialog__container"><div class="mdc-dialog__surface" role="alertdialog" aria-modal="true"><h2 class="mdc-dialog__title" id="mandatory-title">URL to share
+</h2>
+	<div class="mdc-dialog__content" id="mandatory-content"><div class="copy-control svelte-1e1qrwu"><input class="input copy-text svelte-1e1qrwu" type="text" placeholder="URL to share" readonly>
+			<div><button class="mdc-button mdc-button--raised mdc-top-app-bar__action-item" style="margin-left: 0.5em;width:100px;"><div class="mdc-button__ripple"></div>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">content_copy</i>
+					<span class="mdc-button__label">Copy</span></button></div></div>
+</div>
+	<div><div class="mdc-dialog__actions"><button class="mdc-button mdc-button--raised mdc-dialog__button" style="margin-top: 1em;" data-mdc-dialog-action="close"><div class="mdc-button__ripple"></div>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">cancel</i>
+				<span class="mdc-button__label">Cancel</span></button>
+</div></div>
+      </div></div>
+  <div class="mdc-dialog__scrim"></div></div>
+
+
+			<button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" aria-label="Print"><div class="mdc-icon-button__ripple"></div>
   print</button>
 
 
@@ -261,26 +286,25 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="1lbigf5">
-		import { set_public_env, start } from "/_app/immutable/start-27f293fb.js";
-
-		set_public_env({});
+		<script type="module" data-sveltekit-hydrate="nq10zd">
+		import { start } from "./_app/immutable/start-463474ab.js";
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1lbigf5"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
+			env: {},
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 2],
+				node_ids: [0, 2],
 				params: {},
-				routeId: ""
-			}
+				routeId: "",
+				data: (function(a){return [a,a]}(null)),
+				form: null
+			},
+			paths: {"base":"","assets":""},
+			target: document.querySelector('[data-sveltekit-hydrate="nq10zd"]').parentNode,
+			trailing_slash: "never"
 		});
-	</script></div>
+	</script>
+	</div>
 	</body>
 </html>
