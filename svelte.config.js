@@ -16,10 +16,8 @@ const config = {
 		}),
 		paths: {
 			// YOUR github repository name
-			base: process.env.NODE_ENV === 'production' ? '' : ''
-		},
-		prerender: {
-			default: true
+			// base: process.env.NODE_ENV === 'production' ? '/sveltekit-watergis-template' : ''
+			base: ''
 		}
 	}
 };
