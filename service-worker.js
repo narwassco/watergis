@@ -1,24 +1,23 @@
 const l = [
-  "/_app/immutable/assets/information-b8b32f49.svg",
-  "/_app/immutable/start-4f071da6.js",
+  "/_app/immutable/start-e07dd652.js",
   "/_app/immutable/components/layout.svelte-04768dea.js",
-  "/_app/immutable/components/error.svelte-f5f5dac6.js",
-  "/_app/immutable/components/pages/_page.svelte-b9b2e07a.js",
+  "/_app/immutable/components/error.svelte-bab3b31a.js",
+  "/_app/immutable/components/pages/_page.svelte-8d8c5410.js",
   "/_app/immutable/modules/pages/_page.ts-e9fa0128.js",
-  "/_app/immutable/chunks/singletons-6fbc89bc.js",
+  "/_app/immutable/chunks/singletons-b011b806.js",
   "/_app/immutable/chunks/preload-helper-aa6bc0ce.js",
   "/_app/immutable/chunks/index-b92bc20f.js",
-  "/_app/immutable/chunks/stores-96c3f5f6.js",
-  "/_app/immutable/chunks/_page-df48e087.js",
-  "/_app/immutable/assets/_page-7afceba0.css",
+  "/_app/immutable/chunks/stores-a2d797c3.js",
+  "/_app/immutable/chunks/_page-9eedca01.js",
+  "/_app/immutable/assets/_page-66ca055c.css",
   "/_app/immutable/chunks/_page-802cc2a3.js",
   "/_app/immutable/chunks/0-0bc2eda4.js",
-  "/_app/immutable/chunks/1-d444a16c.js",
-  "/_app/immutable/chunks/2-7a10a943.js",
+  "/_app/immutable/chunks/1-b0a5fc37.js",
+  "/_app/immutable/chunks/2-32373ad4.js",
   "/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
-  "/_app/immutable/chunks/purify.es-655bdd74.js",
-  "/_app/immutable/chunks/index.es-2bb24bb4.js"
-], u = [
+  "/_app/immutable/chunks/purify.es-20117e50.js",
+  "/_app/immutable/chunks/index.es-9f3e5c9c.js"
+], h = [
   "/.nojekyll",
   "/assets/icons/icon-128x128.png",
   "/assets/icons/icon-144x144.png",
@@ -35,7 +34,7 @@ const l = [
   "/robots.txt",
   "/smui-dark.css",
   "/smui.css"
-], i = "1662807054277", t = self, o = `cache${i}`, p = l.concat(u), h = new Set(p);
+], i = "1662821804923", t = self, o = `cache${i}`, p = l.concat(h), u = new Set(p);
 t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
@@ -67,7 +66,7 @@ async function r(s) {
 t.addEventListener("fetch", (s) => {
   if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), a = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && h.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
+  const e = new URL(s.request.url), a = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && u.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
   a && !c && !m && s.respondWith(
     (async () => n && await caches.match(s.request) || r(s.request))()
   );
