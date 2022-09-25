@@ -19,24 +19,24 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 		<meta http-equiv="content-security-policy" content=""><link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" data-svelte="svelte-7r4yyr">
 		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" data-svelte="svelte-7r4yyr">
-	<link href="./_app/immutable/assets/_page-66ca055c.css" rel="stylesheet">
-	<link rel="modulepreload" href="./_app/immutable/start-ccfa734d.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/index-b92bc20f.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d0ec7faf.js">
-	<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-04768dea.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-a3f6cfe0.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/_page-793e6e8e.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/stores-128d8a16.js">
-	<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.ts-e9fa0128.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/_page-802cc2a3.js">
-			<script>
-		if ('serviceWorker' in navigator) {
-			addEventListener('load', function () {
-				navigator.serviceWorker.register('/service-worker.js');
-			});
-		}
-	</script>
+		<link href="./_app/immutable/assets/_page-732c3ebb.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-fb9349c7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-b92bc20f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-2b0ae7ae.js">
+		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-04768dea.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-4cf869f5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-3c1512ad.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores-9a867a20.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.ts-e9fa0128.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-802cc2a3.js">
+		<script>
+			if ('serviceWorker' in navigator) {
+				addEventListener('load', function () {
+					navigator.serviceWorker.register('./service-worker.js');
+				});
+			}
+		</script>
 	</head>
 	<style type="text/css">
 		html,
@@ -247,25 +247,14 @@
 </div></div>
 
 </div>
-		<hr>
-		<div class="mdc-form-field"><div class="mdc-checkbox" style=""><input class="mdc-checkbox__native-control" type="checkbox" id="SMUI-form-field-0" checked>
-  <div class="mdc-checkbox__background"><svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24"><path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path></svg>
-    <div class="mdc-checkbox__mixedmark"></div></div>
-  <div class="mdc-checkbox__ripple"></div>
 </div>
-  <label for="SMUI-form-field-0"><span slot="label">Show only rendered layers</span></label>
-</div>
-		<div class="mdc-form-field"><div class="mdc-checkbox" style=""><input class="mdc-checkbox__native-control" type="checkbox" id="SMUI-form-field-1" checked>
-  <div class="mdc-checkbox__background"><svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24"><path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path></svg>
-    <div class="mdc-checkbox__mixedmark"></div></div>
-  <div class="mdc-checkbox__ripple"></div>
-</div>
-  <label for="SMUI-form-field-1"><span slot="label">Show only water layers</span></label>
-</div>
-		<hr>
-</div>
-	<div class="mdc-drawer__content"><ul class="mdc-deprecated-list" role="list">
-</ul>
+	<div class="mdc-drawer__content"><nav class="panel"><div class="tabs is-toggle is-fullwidth m-2 legend-header"><ul><li class="is-active">
+				<a><span>Show rendered</span></a></li>
+			<li class="is-active">
+					<a><span>Show related</span></a></li></ul></div>
+
+	<nav class="panel legend-content svelte-1j7rc7q"></nav>
+</nav>
 </div>
 		
 		</div></div>
@@ -286,25 +275,25 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="eiujfd">
-		import { start } from "./_app/immutable/start-ccfa734d.js";
+		<script type="module" data-sveltekit-hydrate="2kj7pt">
+			import { start } from "./_app/immutable/start-fb9349c7.js";
 
-		start({
-			env: {},
-			hydrate: {
-				status: 200,
-				error: null,
-				node_ids: [0, 2],
-				params: {},
-				routeId: "",
-				data: (function(a){return [a,a]}(null)),
-				form: null
-			},
-			paths: {"base":"","assets":""},
-			target: document.querySelector('[data-sveltekit-hydrate="eiujfd"]').parentNode,
-			trailing_slash: "never"
-		});
-	</script>
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 2],
+					params: {},
+					routeId: "",
+					data: (function(a){return [a,a]}(null)),
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="2kj7pt"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
 	</div>
 	</body>
 </html>
