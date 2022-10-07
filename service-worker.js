@@ -1,22 +1,22 @@
 const l = [
-  "/_app/immutable/start-9d56a675.js",
-  "/_app/immutable/components/layout.svelte-bdef1c5c.js",
-  "/_app/immutable/components/error.svelte-809ce29d.js",
-  "/_app/immutable/components/pages/_page.svelte-505bee32.js",
+  "/_app/immutable/start-65f698df.js",
+  "/_app/immutable/components/layout.svelte-66cc6877.js",
+  "/_app/immutable/components/error.svelte-72f9e5b9.js",
+  "/_app/immutable/components/pages/_page.svelte-2064a802.js",
   "/_app/immutable/modules/pages/_page.ts-e9fa0128.js",
-  "/_app/immutable/chunks/singletons-d4e9d436.js",
+  "/_app/immutable/chunks/singletons-cf4d4874.js",
   "/_app/immutable/chunks/preload-helper-aa6bc0ce.js",
-  "/_app/immutable/chunks/index-f5d486da.js",
-  "/_app/immutable/chunks/stores-d0db19a2.js",
-  "/_app/immutable/chunks/_page-0766aba7.js",
+  "/_app/immutable/chunks/index-b0387173.js",
+  "/_app/immutable/chunks/stores-24b9c867.js",
+  "/_app/immutable/chunks/_page-8aaf030d.js",
   "/_app/immutable/assets/_page-83f7c903.css",
   "/_app/immutable/chunks/_page-802cc2a3.js",
-  "/_app/immutable/chunks/0-004366e5.js",
-  "/_app/immutable/chunks/1-483a3b11.js",
-  "/_app/immutable/chunks/2-fca70c8b.js",
-  "/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
-  "/_app/immutable/chunks/purify.es-20117e50.js",
-  "/_app/immutable/chunks/index.es-b623141b.js"
+  "/_app/immutable/chunks/0-a14fa472.js",
+  "/_app/immutable/chunks/1-53a442d5.js",
+  "/_app/immutable/chunks/2-28745981.js",
+  "/_app/immutable/chunks/html2canvas.esm-a916e51b.js",
+  "/_app/immutable/chunks/purify.es-8c684ad6.js",
+  "/_app/immutable/chunks/index.es-9bde7459.js"
 ], h = [
   "/.nojekyll",
   "/assets/icons/icon-128x128.png",
@@ -34,40 +34,40 @@ const l = [
   "/robots.txt",
   "/smui-dark.css",
   "/smui.css"
-], i = "1664162534918", a = self, o = `cache${i}`, p = l.concat(h), u = new Set(p);
-a.addEventListener("install", (s) => {
+], i = "1665133369457", t = self, o = `cache${i}`, p = l.concat(h), u = new Set(p);
+t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
-      a.skipWaiting();
+      t.skipWaiting();
     })
   );
 });
-a.addEventListener("activate", (s) => {
+t.addEventListener("activate", (s) => {
   s.waitUntil(
     caches.keys().then(async (e) => {
-      for (const t of e)
-        t !== o && await caches.delete(t);
-      a.clients.claim();
+      for (const a of e)
+        a !== o && await caches.delete(a);
+      t.clients.claim();
     })
   );
 });
 async function r(s) {
   const e = await caches.open(`offline${i}`);
   try {
-    const t = await fetch(s);
-    return e.put(s, t.clone()), t;
-  } catch (t) {
+    const a = await fetch(s);
+    return e.put(s, a.clone()), a;
+  } catch (a) {
     const c = await e.match(s);
     if (c)
       return c;
-    throw t;
+    throw a;
   }
 }
-a.addEventListener("fetch", (s) => {
+t.addEventListener("fetch", (s) => {
   if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && u.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
-  t && !c && !m && s.respondWith(
+  const e = new URL(s.request.url), a = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && u.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
+  a && !c && !m && s.respondWith(
     (async () => n && await caches.match(s.request) || r(s.request))()
   );
 });
