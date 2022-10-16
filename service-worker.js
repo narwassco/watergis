@@ -1,24 +1,24 @@
 const l = [
   "/_app/immutable/assets/fa-solid-900-d27bc752.woff2",
   "/_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-  "/_app/immutable/start-015fe14b.js",
-  "/_app/immutable/components/layout.svelte-cd58ed01.js",
-  "/_app/immutable/components/error.svelte-c14a3ad1.js",
-  "/_app/immutable/components/pages/_page.svelte-0d2e3604.js",
+  "/_app/immutable/start-b9d11e87.js",
+  "/_app/immutable/components/layout.svelte-ba0b0372.js",
+  "/_app/immutable/components/error.svelte-19cdd862.js",
+  "/_app/immutable/components/pages/_page.svelte-f38e0cac.js",
   "/_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
-  "/_app/immutable/chunks/singletons-8d93652c.js",
-  "/_app/immutable/chunks/index-0502b7ae.js",
+  "/_app/immutable/chunks/singletons-f55f3da3.js",
+  "/_app/immutable/chunks/index-952dc840.js",
   "/_app/immutable/chunks/preload-helper-aa6bc0ce.js",
-  "/_app/immutable/chunks/stores-bae3d2ac.js",
-  "/_app/immutable/chunks/_page-b92c3120.js",
+  "/_app/immutable/chunks/stores-914ca2bb.js",
+  "/_app/immutable/chunks/_page-7ab9a43f.js",
   "/_app/immutable/assets/_page-d99bf7d3.css",
   "/_app/immutable/chunks/_page-c82b235a.js",
-  "/_app/immutable/chunks/0-6420d3cd.js",
-  "/_app/immutable/chunks/1-6c8558d4.js",
-  "/_app/immutable/chunks/2-0af8cbb8.js",
+  "/_app/immutable/chunks/0-fec88e83.js",
+  "/_app/immutable/chunks/1-523641e1.js",
+  "/_app/immutable/chunks/2-314a8ac3.js",
   "/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
   "/_app/immutable/chunks/purify.es-20117e50.js",
-  "/_app/immutable/chunks/index.es-241674ea.js"
+  "/_app/immutable/chunks/index.es-6237f8c5.js"
 ], u = [
   "/.nojekyll",
   "/assets/icons/icon-128x128.png",
@@ -36,7 +36,7 @@ const l = [
   "/robots.txt",
   "/smui-dark.css",
   "/smui.css"
-], i = "1665907776348", t = self, o = `cache${i}`, p = l.concat(u), h = new Set(p);
+], i = "1665913538318", t = self, o = `cache${i}`, p = l.concat(u), h = new Set(p);
 t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
