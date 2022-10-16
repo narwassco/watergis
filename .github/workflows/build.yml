@@ -18,6 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       # pnpm setup
       # refer to https://github.com/pnpm/action-setup
       - name: pnpm setup
@@ -25,11 +26,13 @@ jobs:
         with:
           version: 7
           run_install: false
-      - name: Use Nodejs
-        uses: actions/setup-node@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+
       - name: Get pnpm store directory
         id: pnpm-cache
         run: |
@@ -43,19 +46,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      # install dependencies
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: lint, format & build
+      - name: Run lint
+        run: pnpm lint
+
+      - name: Run Prettier
+        run: pnpm format
+
+      - name: Run build
         env:
           CNAME: ${{secrets.CNAME}}
         run: |
-          npm run format
-          npm run lint
-          npm run build
+          pnpm build
           echo "${CNAME}" >> ./build/CNAME
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
