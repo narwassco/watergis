@@ -5,8 +5,8 @@ importers:
   .:
     specifiers:
       '@arkweid/lefthook': ^0.7.7
+      '@creativebulma/bulma-collapsible': ^1.0.4
       '@geoffcox/svelte-splitter': ^1.0.1
-      '@smui-extra/accordion': ^6.1.4
       '@smui/button': ^6.1.4
       '@smui/select': ^6.2.0
       '@smui/snackbar': ^6.1.4
@@ -19,8 +19,9 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.40.0
       '@typescript-eslint/parser': ^5.40.0
       '@watergis/mapbox-gl-area-switcher': ^1.0.1
-      '@watergis/svelte-maplibre-attribute-popup': ^0.0.5
-      '@watergis/svelte-maplibre-legend': ^0.0.13
+      '@watergis/svelte-maplibre-attribute-popup': ^0.0.7
+      '@watergis/svelte-maplibre-legend': ^0.0.15
+      '@watergis/svelte-maplibre-search': ^0.1.2
       '@watergis/terrain-rgb': ^1.1.8
       eslint: ^8.25.0
       eslint-config-prettier: ^8.5.0
@@ -34,7 +35,6 @@ importers:
       prettier: ^2.7.1
       prettier-plugin-svelte: ^2.8.0
       rimraf: ^3.0.2
-      simple-svelte-autocomplete: ^2.4.0
       smui-theme: ^6.2.0
       svelte: ^3.52.0
       svelte-check: ^2.9.2
@@ -44,8 +44,8 @@ importers:
       typescript: ~4.8.4
       vite: ^3.1.8
     dependencies:
+      '@creativebulma/bulma-collapsible': 1.0.4
       '@geoffcox/svelte-splitter': 1.0.1
-      '@smui-extra/accordion': 6.1.4_besnmoibwkhwtentvwuriss7pa
       '@smui/button': 6.1.4_besnmoibwkhwtentvwuriss7pa
       '@smui/select': 6.2.0_besnmoibwkhwtentvwuriss7pa
       '@smui/snackbar': 6.1.4_besnmoibwkhwtentvwuriss7pa
@@ -54,8 +54,9 @@ importers:
       '@turf/distance': 6.5.0
       '@types/file-saver': 2.0.5
       '@watergis/mapbox-gl-area-switcher': 1.0.1
-      '@watergis/svelte-maplibre-attribute-popup': 0.0.5
-      '@watergis/svelte-maplibre-legend': 0.0.13
+      '@watergis/svelte-maplibre-attribute-popup': 0.0.7
+      '@watergis/svelte-maplibre-legend': 0.0.15
+      '@watergis/svelte-maplibre-search': 0.1.2
       '@watergis/terrain-rgb': 1.1.8
       fabric: 5.2.4
       file-saver: 2.0.5
@@ -63,7 +64,6 @@ importers:
       image-clipper: 0.4.4
       jspdf: 2.5.1
       maplibre-gl: 2.4.0
-      simple-svelte-autocomplete: 2.4.0
       smui-theme: 6.2.0
       svelte-copy: 1.3.0
     devDependencies:
@@ -105,6 +105,12 @@ packages:
 
   /@canvas/image-data/1.0.0:
     resolution: {integrity: sha512-BxOqI5LgsIQP1odU5KMwV9yoijleOPzHL18/YvNqF9KFSGF2K/DLlYAbDQsWqd/1nbaFuSkYD/191dpMtNh4vw==}
+    dev: false
+
+  /@creativebulma/bulma-collapsible/1.0.4:
+    resolution: {integrity: sha512-aNqSwyuJxshoIc4oD3wJ3eRqOANRweYfpzqmef/fj5tf0Yn7UVx99yh8ovY6vhB8Il31bFcc7f/eRfJvEMNUPw==}
+    dependencies:
+      bulma: 0.9.4
     dev: false
 
   /@esbuild/android-arm/0.15.10:
@@ -590,24 +596,6 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@smui-extra/accordion/6.1.4_besnmoibwkhwtentvwuriss7pa:
-    resolution: {integrity: sha512-2yaGn8Jmqr+EGF+Xk5GkvNGu9jUH+RxuhUybfpZ0LHlGJhmXAAGUthgf44EJ0XLlR7upPaAmd3lI1+fYfmrRDQ==}
-    dependencies:
-      '@material/animation': 13.0.0
-      '@material/elevation': 13.0.0
-      '@material/feature-targeting': 13.0.0
-      '@material/ripple': 13.0.0
-      '@material/theme': 13.0.0
-      '@material/typography': 13.0.0
-      '@smui/common': 6.1.4_besnmoibwkhwtentvwuriss7pa
-      '@smui/paper': 6.1.4_besnmoibwkhwtentvwuriss7pa
-      '@smui/ripple': 6.1.4_besnmoibwkhwtentvwuriss7pa
-      svelte2tsx: 0.5.19_besnmoibwkhwtentvwuriss7pa
-    transitivePeerDependencies:
-      - svelte
-      - typescript
-    dev: false
-
   /@smui/button/6.1.4_besnmoibwkhwtentvwuriss7pa:
     resolution: {integrity: sha512-4CD6uPNkvZzoQyr6b3+PC49wieMkZW6xzxf+r/vq5pcv2X/PM+caySjzfAZamWN2m4nZMrmJjyEw1iCITWoQyg==}
     dependencies:
@@ -716,21 +704,6 @@ packages:
       '@material/notched-outline': 13.0.0
       '@smui/common': 6.1.4_besnmoibwkhwtentvwuriss7pa
       '@smui/floating-label': 6.1.4_besnmoibwkhwtentvwuriss7pa
-      svelte2tsx: 0.5.19_besnmoibwkhwtentvwuriss7pa
-    transitivePeerDependencies:
-      - svelte
-      - typescript
-    dev: false
-
-  /@smui/paper/6.1.4_besnmoibwkhwtentvwuriss7pa:
-    resolution: {integrity: sha512-mKfbF5Hr5yUsUL8tGmKHfkV6bxkE50EJwZmCw0t1+CSOfHTD/96klVNDVKh4Tgr7tfK8g0yJ14Ra8fJwV/V6jA==}
-    dependencies:
-      '@material/elevation': 13.0.0
-      '@material/feature-targeting': 13.0.0
-      '@material/shape': 13.0.0
-      '@material/theme': 13.0.0
-      '@material/typography': 13.0.0
-      '@smui/common': 6.1.4_besnmoibwkhwtentvwuriss7pa
       svelte2tsx: 0.5.19_besnmoibwkhwtentvwuriss7pa
     transitivePeerDependencies:
       - svelte
@@ -1090,17 +1063,24 @@ packages:
       mapbox-gl: 1.13.2
     dev: false
 
-  /@watergis/svelte-maplibre-attribute-popup/0.0.5:
-    resolution: {integrity: sha512-QquiAjoGogJkSfWWmCrPMxYGFbby21dmfG7cEMxCmddokCSKMD495t7XbSzFEtfOvFaZr4FFJW2rtNPsyYwK5A==}
+  /@watergis/svelte-maplibre-attribute-popup/0.0.7:
+    resolution: {integrity: sha512-w20LmfhR9dabrcy+suF9nhV7KkhhGP6AO+WJ0CNBGmmyI4FI0Zyr6MJa8nbwD4W/0uMxUyn/w+LecKVgj+u3Qg==}
     dependencies:
       maplibre-gl: 2.4.0
     dev: false
 
-  /@watergis/svelte-maplibre-legend/0.0.13:
-    resolution: {integrity: sha512-l6Duu4RsjNlYbqg+c9JehxNPA4Y6IHTdACSdVGETqAMmev7yajFy0P8vfYJ9Ezutdi1PClxLKary3/WMpgR+7g==}
+  /@watergis/svelte-maplibre-legend/0.0.15:
+    resolution: {integrity: sha512-KAXuy5nOSyMb9Lv/4IKn1hgD6kmTAEVd7ZPZxvYMixsaYe1l5UK9wlgB0GJgxh8Bew1t1hBb7I/1/5zvDVFe8Q==}
     dependencies:
       '@watergis/legend-symbol': 0.2.2
       maplibre-gl: 2.4.0
+    dev: false
+
+  /@watergis/svelte-maplibre-search/0.1.2:
+    resolution: {integrity: sha512-t2HVyHWBUHHQgdbGnEWjEa+jFiGmcKULarKX+420SeGf9TcXE3p3OPKPALU/CHGJyDpZAffpypvAEikRU5XFyQ==}
+    dependencies:
+      maplibre-gl: 2.4.0
+      simple-svelte-autocomplete: 2.4.0
     dev: false
 
   /@watergis/terrain-rgb/1.1.8:
@@ -1292,6 +1272,10 @@ packages:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
+    dev: false
+
+  /bulma/0.9.4:
+    resolution: {integrity: sha512-86FlT5+1GrsgKbPLRRY7cGDg8fsJiP/jzTqXXVqiUZZ2aZT8uemEOHlU1CDU+TxklPEZ11HZNNWclRBBecP4CQ==}
     dev: false
 
   /busboy/1.6.0:
