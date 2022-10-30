@@ -1,8 +1,8 @@
 <script lang="ts">
-	import MeasurePanel from './MeasurePanel.svelte';
-	import ValhallaIsochronePanel from './ValhallaIsochronePanel.svelte';
-	import ValhallaRoutingPanel from './ValhallaRoutingPanel.svelte';
+	import { MeasurePanel } from '@watergis/svelte-maplibre-measure';
 	import CollapsiblePanel from './CollapsiblePanel.svelte';
+	import { ValhallaIsochronePanel, ValhallaRoutingPanel } from '@watergis/svelte-maplibre-valhalla';
+	import { map } from '$lib/stores';
 	import { config } from '$config';
 
 	export let isAdvancedTabVisible = false;
@@ -16,15 +16,27 @@
 	{#if isAdvancedTabVisible}
 		{#if config.elevation}
 			<CollapsiblePanel title="Measuring tool" bind:isPanelOpen={panelMeasureOpen}>
-				<MeasurePanel />
+				<MeasurePanel
+					bind:map={$map}
+					bind:measureOption={config.elevation.options}
+					bind:terrainRgbUrl={config.elevation.url}
+				/>
 			</CollapsiblePanel>
 		{/if}
 		{#if config.valhalla}
 			<CollapsiblePanel title="Routing tool" bind:isPanelOpen={panelRoutingOpen}>
-				<ValhallaRoutingPanel />
+				<ValhallaRoutingPanel
+					bind:map={$map}
+					bind:url={config.valhalla.url}
+					bind:options={config.valhalla.routingOptions}
+				/>
 			</CollapsiblePanel>
 			<CollapsiblePanel title="Isochrone analysis" bind:isPanelOpen={panelTimeIsochroneOpen}>
-				<ValhallaIsochronePanel />
+				<ValhallaIsochronePanel
+					bind:map={$map}
+					bind:url={config.valhalla.url}
+					bind:options={config.valhalla.isoChroneOptions}
+				/>
 			</CollapsiblePanel>
 		{/if}
 	{/if}
