@@ -1,19 +1,19 @@
 {
-  "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.woff2": {
+  "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.woff2": {
     "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
-    "src": "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.woff2"
+    "src": "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.woff2"
   },
-  "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.ttf": {
+  "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.ttf": {
     "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-    "src": "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.ttf"
+    "src": "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.ttf"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-84d75d39.js",
+    "file": "_app/immutable/start-ee5f32d8.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-fbce07e2.js",
-      "_singletons-8b910b59.js",
+      "_singletons-647c56bc.js",
       "_preload-helper-b21cceae.js"
     ],
     "dynamicImports": [
@@ -31,21 +31,21 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-d674c626.js",
+    "file": "_app/immutable/components/error.svelte-a0b5c99b.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-fbce07e2.js",
-      "_singletons-8b910b59.js"
+      "_singletons-647c56bc.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-2a376078.js",
+    "file": "_app/immutable/components/pages/_page.svelte-1163fed3.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-fbce07e2.js",
-      "__page-b4ff6e69.js"
+      "__page-80390b5d.js"
     ]
   },
   "src/routes/+page.ts": {
@@ -56,8 +56,8 @@
       "__page-c82b235a.js"
     ]
   },
-  "_singletons-8b910b59.js": {
-    "file": "_app/immutable/chunks/singletons-8b910b59.js",
+  "_singletons-647c56bc.js": {
+    "file": "_app/immutable/chunks/singletons-647c56bc.js",
     "imports": [
       "_index-3d46d3d9.js"
     ]
@@ -74,8 +74,8 @@
   "_preload-helper-b21cceae.js": {
     "file": "_app/immutable/chunks/preload-helper-b21cceae.js"
   },
-  "__page-b4ff6e69.js": {
-    "file": "_app/immutable/chunks/_page-b4ff6e69.js",
+  "__page-80390b5d.js": {
+    "file": "_app/immutable/chunks/_page-80390b5d.js",
     "imports": [
       "_index-fbce07e2.js",
       "_index-3d46d3d9.js",
@@ -106,7 +106,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-142ffa20.js",
+    "file": "_app/immutable/chunks/1-274dda0a.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -114,12 +114,12 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-ed3f1e0d.js",
+    "file": "_app/immutable/chunks/2-3023c4f7.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "__page-c82b235a.js",
-      "__page-b4ff6e69.js"
+      "__page-80390b5d.js"
     ]
   },
   "node_modules/html2canvas/dist/html2canvas.esm.js": {
@@ -133,16 +133,20 @@
     "isDynamicEntry": true
   },
   "node_modules/canvg/lib/index.es.js": {
-    "file": "_app/immutable/chunks/index.es-0cb97423.js",
+    "file": "_app/immutable/chunks/index.es-4b278f9e.js",
     "src": "node_modules/canvg/lib/index.es.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-b4ff6e69.js"
+      "__page-80390b5d.js"
     ]
   },
   "_page.css": {
     "file": "_app/immutable/assets/_page-87453f06.css",
     "src": "_page.css"
+  },
+  "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.woff2": {
+    "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
+    "src": "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.woff2"
   },
   "src/lib/style/fa/webfonts/fa-solid-900.woff2": {
     "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
@@ -155,6 +159,10 @@
   "node_modules/@watergis/svelte-maplibre-menu/package/style/fa/webfonts/fa-solid-900.woff2": {
     "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
     "src": "node_modules/@watergis/svelte-maplibre-menu/package/style/fa/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.ttf": {
+    "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
+    "src": "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.ttf"
   },
   "src/lib/style/fa/webfonts/fa-solid-900.ttf": {
     "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
@@ -191,13 +199,5 @@
   "node_modules/@watergis/svelte-collapsible-panel/package/style/fa/webfonts/fa-solid-900.ttf": {
     "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
     "src": "node_modules/@watergis/svelte-collapsible-panel/package/style/fa/webfonts/fa-solid-900.ttf"
-  },
-  "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.woff2": {
-    "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
-    "src": "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.woff2"
-  },
-  "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.ttf": {
-    "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-    "src": "node_modules/@watergis/svelte-maplibre-legend/package/style/fa/webfonts/fa-solid-900.ttf"
   }
 }
