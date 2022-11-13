@@ -12,10 +12,10 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/start-423b9d35.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-abb8a827.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-e9a4a5ed.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-da9beac9.js">
+		<link rel="modulepreload" href="./_app/immutable/start-730a8d6d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-d0decbdb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-94246e34.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-66f8fb1c.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-b21cceae.js">
 		<script>
 			if ('serviceWorker' in navigator) {
@@ -29,16 +29,21 @@
 		html,
 		body {
 			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			/* mobile viewport bug fix */
+			min-height: -webkit-fill-available;
 		}
 
 		html {
 			overflow-y: hidden !important;
+			height: -webkit-fill-available;
 		}
 	</style>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "./_app/immutable/start-423b9d35.js";
+			import { start } from "./_app/immutable/start-730a8d6d.js";
 
 			start({
 				env: {},
