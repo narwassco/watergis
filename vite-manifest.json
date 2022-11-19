@@ -8,12 +8,12 @@
     "src": "node_modules/@watergis/svelte-maplibre-export/package/style/fa/webfonts/fa-solid-900.ttf"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-59d33b11.js",
+    "file": "_app/immutable/start-d67a73e3.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-d0decbdb.js",
-      "_singletons-3753e1e8.js",
+      "_singletons-b2db0fc5.js",
       "_preload-helper-b21cceae.js"
     ],
     "dynamicImports": [
@@ -31,21 +31,21 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-bbdd97e8.js",
+    "file": "_app/immutable/components/error.svelte-1dd8a7be.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-d0decbdb.js",
-      "_singletons-3753e1e8.js"
+      "_singletons-b2db0fc5.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-f4eafa24.js",
+    "file": "_app/immutable/components/pages/_page.svelte-7044eb18.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d0decbdb.js",
-      "__page-f521cc63.js"
+      "__page-fbbafd28.js"
     ]
   },
   "src/routes/+page.ts": {
@@ -56,8 +56,8 @@
       "__page-c82b235a.js"
     ]
   },
-  "_singletons-3753e1e8.js": {
-    "file": "_app/immutable/chunks/singletons-3753e1e8.js",
+  "_singletons-b2db0fc5.js": {
+    "file": "_app/immutable/chunks/singletons-b2db0fc5.js",
     "imports": [
       "_index-66f8fb1c.js"
     ]
@@ -74,8 +74,8 @@
   "_preload-helper-b21cceae.js": {
     "file": "_app/immutable/chunks/preload-helper-b21cceae.js"
   },
-  "__page-f521cc63.js": {
-    "file": "_app/immutable/chunks/_page-f521cc63.js",
+  "__page-fbbafd28.js": {
+    "file": "_app/immutable/chunks/_page-fbbafd28.js",
     "imports": [
       "_index-d0decbdb.js",
       "_index-66f8fb1c.js",
@@ -106,7 +106,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-35398473.js",
+    "file": "_app/immutable/chunks/1-50ebf77d.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -114,12 +114,12 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-72a1ad4e.js",
+    "file": "_app/immutable/chunks/2-5aa53a2b.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "__page-c82b235a.js",
-      "__page-f521cc63.js"
+      "__page-fbbafd28.js"
     ]
   },
   "node_modules/html2canvas/dist/html2canvas.esm.js": {
@@ -133,11 +133,11 @@
     "isDynamicEntry": true
   },
   "node_modules/canvg/lib/index.es.js": {
-    "file": "_app/immutable/chunks/index.es-cea3c4d3.js",
+    "file": "_app/immutable/chunks/index.es-ea885afd.js",
     "src": "node_modules/canvg/lib/index.es.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-f521cc63.js"
+      "__page-fbbafd28.js"
     ]
   },
   "_page.css": {
@@ -152,13 +152,13 @@
     "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
     "src": "node_modules/@watergis/svelte-maplibre-menu/package/style/fa/webfonts/fa-solid-900.woff2"
   },
-  "src/lib/style/fa/webfonts/fa-solid-900.woff2": {
-    "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
-    "src": "src/lib/style/fa/webfonts/fa-solid-900.woff2"
-  },
   "node_modules/@watergis/svelte-maplibre-share/package/style/fa/webfonts/fa-solid-900.ttf": {
     "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
     "src": "node_modules/@watergis/svelte-maplibre-share/package/style/fa/webfonts/fa-solid-900.ttf"
+  },
+  "src/lib/style/fa/webfonts/fa-solid-900.woff2": {
+    "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
+    "src": "src/lib/style/fa/webfonts/fa-solid-900.woff2"
   },
   "node_modules/@watergis/svelte-maplibre-menu/package/style/fa/webfonts/fa-solid-900.ttf": {
     "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
