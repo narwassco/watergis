@@ -1,72 +1,68 @@
-const m = [
-  "/_app/immutable/chunks/0-0c4f2237.js",
-  "/_app/immutable/chunks/1-36826f91.js",
-  "/_app/immutable/chunks/2-5481f247.js",
-  "/_app/immutable/chunks/_page-7e4796dc.js",
-  "/_app/immutable/chunks/_page-fd4e23e8.js",
-  "/_app/immutable/assets/_page-e54782af.css",
-  "/_app/immutable/chunks/index-0f63c3d9.js",
-  "/_app/immutable/chunks/index-75416758.js",
-  "/_app/immutable/chunks/index-95d721c5.js",
-  "/_app/immutable/chunks/preload-helper-41c905a7.js",
-  "/_app/immutable/chunks/singletons-45e56a3f.js",
-  "/_app/immutable/start-65268a18.js",
-  "/_app/immutable/components/error.svelte-f2ca09d4.js",
-  "/_app/immutable/components/layout.svelte-70c9eca1.js",
-  "/_app/immutable/chunks/index.es-e1dd57ee.js",
-  "/_app/immutable/chunks/purify.es-075a2866.js",
-  "/_app/immutable/chunks/html2canvas.esm-0a33ed42.js",
-  "/_app/immutable/components/pages/_page.svelte-68d215d4.js",
-  "/_app/immutable/modules/pages/_page.ts-6a8cdd0a.js"
-], h = [
-  "/.nojekyll",
-  "/assets/icons/icon-128x128.png",
-  "/assets/icons/icon-144x144.png",
-  "/assets/icons/icon-152x152.png",
-  "/assets/icons/icon-192x192.png",
-  "/assets/icons/icon-384x384.png",
-  "/assets/icons/icon-48x48.png",
-  "/assets/icons/icon-512x512.png",
-  "/assets/icons/icon-72x72.png",
-  "/assets/icons/icon-96x96.png",
-  "/assets/preview-1200x630.png",
-  "/favicon.png",
-  "/manifest.webmanifest",
-  "/robots.txt"
-], i = "1676886478940", a = self, o = `cache${i}`, p = m.concat(h), u = new Set(p);
-a.addEventListener("install", (s) => {
-  s.waitUntil(
-    caches.open(o).then((e) => e.addAll(p)).then(() => {
-      a.skipWaiting();
+const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
+  s + "/_app/immutable/entry/app.2857eefd.js",
+  s + "/_app/immutable/nodes/0.706caf88.js",
+  s + "/_app/immutable/nodes/1.8f296235.js",
+  s + "/_app/immutable/nodes/2.bff84457.js",
+  s + "/_app/immutable/assets/2.6fe86d23.css",
+  s + "/_app/immutable/chunks/2.68dbf9c3.js",
+  s + "/_app/immutable/chunks/index.331c9040.js",
+  s + "/_app/immutable/chunks/index.7e27822a.js",
+  s + "/_app/immutable/chunks/index.e867fe62.js",
+  s + "/_app/immutable/chunks/preload-helper.41c905a7.js",
+  s + "/_app/immutable/chunks/singletons.0635c383.js",
+  s + "/_app/immutable/entry/start.4b2c6861.js",
+  s + "/_app/immutable/chunks/index.es.4a7a307b.js",
+  s + "/_app/immutable/chunks/purify.es.f47f2ec0.js",
+  s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
+], m = [
+  s + "/.nojekyll",
+  s + "/assets/icons/icon-128x128.png",
+  s + "/assets/icons/icon-144x144.png",
+  s + "/assets/icons/icon-152x152.png",
+  s + "/assets/icons/icon-192x192.png",
+  s + "/assets/icons/icon-384x384.png",
+  s + "/assets/icons/icon-48x48.png",
+  s + "/assets/icons/icon-512x512.png",
+  s + "/assets/icons/icon-72x72.png",
+  s + "/assets/icons/icon-96x96.png",
+  s + "/assets/preview-1200x630.png",
+  s + "/favicon.png",
+  s + "/manifest.webmanifest",
+  s + "/robots.txt"
+], o = "1685080312239", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+n.addEventListener("install", (e) => {
+  e.waitUntil(
+    caches.open(p).then((t) => t.addAll(h)).then(() => {
+      n.skipWaiting();
     })
   );
 });
-a.addEventListener("activate", (s) => {
-  s.waitUntil(
-    caches.keys().then(async (e) => {
-      for (const t of e)
-        t !== o && await caches.delete(t);
-      a.clients.claim();
+n.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then(async (t) => {
+      for (const a of t)
+        a !== p && await caches.delete(a);
+      n.clients.claim();
     })
   );
 });
-async function r(s) {
-  const e = await caches.open(`offline${i}`);
+async function f(e) {
+  const t = await caches.open(`offline${o}`);
   try {
-    const t = await fetch(s);
-    return e.put(s, t.clone()), t;
-  } catch (t) {
-    const c = await e.match(s);
+    const a = await fetch(e);
+    return t.put(e, a.clone()), a;
+  } catch (a) {
+    const c = await t.match(e);
     if (c)
       return c;
-    throw t;
+    throw a;
   }
 }
-a.addEventListener("fetch", (s) => {
-  if (s.request.method !== "GET" || s.request.headers.has("range"))
+n.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && u.has(e.pathname), l = s.request.cache === "only-if-cached" && !n;
-  t && !c && !l && s.respondWith(
-    (async () => n && await caches.match(s.request) || r(s.request))()
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
+  a && !c && !l && e.respondWith(
+    (async () => i && await caches.match(e.request) || f(e.request))()
   );
 });
