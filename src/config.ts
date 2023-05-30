@@ -165,9 +165,13 @@ export const config: Config = {
 			iconImage: 'marker',
 			iconSize: 1
 		}
-	}
+	},
 	// terrain: {
 	// 	source: 'narok-dem',
 	// 	exaggeration: 1
-	// }
+	// },
+	attributeTable: {
+		rowsPerPage: 25,
+		minZoom: 14
+	}
 };
