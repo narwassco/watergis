@@ -1,17 +1,17 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.72a6c5ca.js",
-  s + "/_app/immutable/nodes/0.706caf88.js",
-  s + "/_app/immutable/nodes/1.55868293.js",
-  s + "/_app/immutable/nodes/2.bff84457.js",
-  s + "/_app/immutable/assets/2.6fe86d23.css",
-  s + "/_app/immutable/chunks/2.68dbf9c3.js",
-  s + "/_app/immutable/chunks/index.331c9040.js",
-  s + "/_app/immutable/chunks/index.7e27822a.js",
-  s + "/_app/immutable/chunks/index.e867fe62.js",
+  s + "/_app/immutable/entry/app.536859cf.js",
+  s + "/_app/immutable/nodes/0.bb379f6d.js",
+  s + "/_app/immutable/nodes/1.940c4159.js",
+  s + "/_app/immutable/nodes/2.c82e8d1c.js",
+  s + "/_app/immutable/assets/2.ef31cbb5.css",
+  s + "/_app/immutable/chunks/2.375beee8.js",
+  s + "/_app/immutable/chunks/index.0d681bb0.js",
+  s + "/_app/immutable/chunks/index.a10ba89a.js",
+  s + "/_app/immutable/chunks/index.c470a183.js",
   s + "/_app/immutable/chunks/preload-helper.41c905a7.js",
-  s + "/_app/immutable/chunks/singletons.34974d2f.js",
-  s + "/_app/immutable/entry/start.4aa624ba.js",
-  s + "/_app/immutable/chunks/index.es.4a7a307b.js",
+  s + "/_app/immutable/chunks/singletons.39dcb8dc.js",
+  s + "/_app/immutable/entry/start.9f8dc46e.js",
+  s + "/_app/immutable/chunks/index.es.5751e5a8.js",
   s + "/_app/immutable/chunks/purify.es.f47f2ec0.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
 ], m = [
@@ -29,7 +29,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], o = "1685349507709", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+], o = "1685420151061", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(h)).then(() => {
@@ -46,7 +46,7 @@ n.addEventListener("activate", (e) => {
     })
   );
 });
-async function f(e) {
+async function d(e) {
   const t = await caches.open(`offline${o}`);
   try {
     const a = await fetch(e);
@@ -63,6 +63,6 @@ n.addEventListener("fetch", (e) => {
     return;
   const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
   a && !c && !l && e.respondWith(
-    (async () => i && await caches.match(e.request) || f(e.request))()
+    (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });
