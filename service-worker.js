@@ -1,18 +1,18 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.0344a61e.js",
-  s + "/_app/immutable/nodes/0.431c0a10.js",
-  s + "/_app/immutable/nodes/1.38e891ae.js",
-  s + "/_app/immutable/nodes/2.44c521e5.js",
-  s + "/_app/immutable/assets/2.8531a707.css",
-  s + "/_app/immutable/chunks/2.0a204caa.js",
-  s + "/_app/immutable/chunks/index.7bbd4199.js",
-  s + "/_app/immutable/chunks/index.89c07c5d.js",
-  s + "/_app/immutable/chunks/index.ef5c17ea.js",
+  s + "/_app/immutable/entry/app.9f62cf07.js",
+  s + "/_app/immutable/nodes/0.cac3c05e.js",
+  s + "/_app/immutable/nodes/1.7ea55142.js",
+  s + "/_app/immutable/nodes/2.570a3935.js",
+  s + "/_app/immutable/assets/2.4ec5b283.css",
+  s + "/_app/immutable/chunks/2.c8573298.js",
+  s + "/_app/immutable/chunks/index.a1df979d.js",
+  s + "/_app/immutable/chunks/index.c6f56c2f.js",
+  s + "/_app/immutable/chunks/index.f67b0ed0.js",
   s + "/_app/immutable/chunks/preload-helper.cf010ec4.js",
-  s + "/_app/immutable/chunks/scheduler.5d7259d7.js",
-  s + "/_app/immutable/chunks/singletons.2e277141.js",
-  s + "/_app/immutable/entry/start.2d8eab11.js",
-  s + "/_app/immutable/chunks/index.es.74f25fd8.js",
+  s + "/_app/immutable/chunks/scheduler.e663fd29.js",
+  s + "/_app/immutable/chunks/singletons.fff3ac78.js",
+  s + "/_app/immutable/entry/start.66b866aa.js",
+  s + "/_app/immutable/chunks/index.es.7411fc8b.js",
   s + "/_app/immutable/chunks/purify.es.cf254a40.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
 ], m = [
@@ -30,40 +30,40 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], o = "1690794016545", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
-n.addEventListener("install", (e) => {
+], o = "1693066107723", c = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(h)).then(() => {
-      n.skipWaiting();
+      c.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (t) => {
       for (const a of t)
         a !== p && await caches.delete(a);
-      n.clients.claim();
+      c.clients.claim();
     })
   );
 });
-async function d(e) {
+async function f(e) {
   const t = await caches.open(`offline${o}`);
   try {
     const a = await fetch(e);
     return t.put(e, a.clone()), a;
   } catch (a) {
-    const c = await t.match(e);
-    if (c)
-      return c;
+    const n = await t.match(e);
+    if (n)
+      return n;
     throw a;
   }
 }
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
-  a && !c && !l && e.respondWith(
-    (async () => i && await caches.match(e.request) || d(e.request))()
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), n = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
+  a && !n && !l && e.respondWith(
+    (async () => i && await caches.match(e.request) || f(e.request))()
   );
 });
