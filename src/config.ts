@@ -178,7 +178,7 @@ export const config: Config = {
 		tourGuideOptions: {
 			steps: [
 				{
-					title: 'Welcome to sveltekit watergis template!',
+					title: `Welcome to Narok Water's map app!`,
 					content: `This tutorial is going to take you around the main features of the application. <br> Let's begin!`,
 					order: 1
 				},
