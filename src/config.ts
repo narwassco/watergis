@@ -296,7 +296,7 @@ export const config: Config = {
 			rememberStep: true
 		},
 		tourControlOptions: {
-			localStorageKey: `watergis-{url}`
+			localStorageKey: `watergis-narwassco-{url}`
 		}
 	}
 };
