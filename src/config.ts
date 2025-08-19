@@ -71,8 +71,9 @@ export const config: Config = {
 		areas: [
 			{ title: 'Narok', latlng: [35.87063, -1.08551], zoom: 14 },
 			{ title: "Ololulung'a", latlng: [35.65072, -1.0085], zoom: 13 },
-			{ title: 'Kilgoris', latlng: [34.87533, -1.00278], zoom: 14 },
-			{ title: 'Suswa', latlng: [36.33078, -1.05307], zoom: 13 }
+			{ title: 'Kilgoris', latlng: [34.8283, -1.1178], zoom: 11 },
+			{ title: 'Suswa', latlng: [36.33078, -1.05307], zoom: 13 },
+			{ title: 'Naroosura', latlng: [35.84429, -1.54446], zoom: 13 }
 		]
 	},
 	// please specify layer name for showing in legend panel.
